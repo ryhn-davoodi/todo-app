@@ -34,7 +34,6 @@ while True:
       except ValueError:
          print("unknown string!")
          continue
-
    elif user_action.startswith("delete"):
       try:
          todos = function.get_todos()
