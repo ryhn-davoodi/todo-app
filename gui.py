@@ -1,6 +1,10 @@
 import  function
 import PySimpleGUI as sg
 import  time
+import os
+if not os.path.exists('todos.txt'):
+    with open('todos.txt','w') as file:
+        pass
 clock=sg.Text(time.strftime("%d-%m-%Y  %H:%M:%S"),key="clock")
 lable=sg.Text('enter a todo:')
 input_Box=sg.InputText(key="todo")
